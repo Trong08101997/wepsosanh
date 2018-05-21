@@ -1,0 +1,70 @@
+.container01 {
+	/*padding: 60px 20px 50px 20px;*/
+}
+
+.container01 #quanly {
+	text-align: left;	
+	font-size: 25px;
+	margin-bottom: 30px;
+	margin-left: 23.5px;
+	border-bottom: 2px #00587A solid;
+	width: 280px;
+	/*box-shadow:#000 0px 0px 4px 0px;*/
+}
+
+.container01 #add_user {
+	border: 1px #00587A solid;
+	width: 80px;
+	height: 35px;
+	font-size: 17px;
+	right: 20px;
+	line-height: 35px;
+	margin-left: 23.5px;
+	border-radius: 3px;
+	background: #00587A;	
+	color: white;
+	/*padding-left: 40px;*/
+	text-align: center;
+}
+
+.container01 #add_user:hover {
+	background: white;
+	border: 1px #00587A solid;
+	color: black;
+}
+
+.container01 .show_users_table {
+	/*margin-top: 30px;*/
+	font-size: 17px;
+	margin: 60px auto;
+	/*border: 1px red solid;	*/
+}
+
+.container01 .show_users_table th {
+	border-bottom: 1px #00587A solid;
+	width: 120px;
+	height: 40px;
+}
+
+.container01 .show_users_table td {
+	text-align: center;
+}
+
+.container01 .show_users_table .stt{
+	width: 50px;
+	border-right: 1px #00587A solid;
+}
+
+.container01 .show_users_table #taikhoan{
+	width: 200px;
+}
+
+.container01 .show_users_table #matkhau{
+	width: 350px;
+}
+
+.container01 .show_users_table .thaotac{
+	/*width: 40px;*/
+	border-left: 1px #00587A solid;
+	/*border-bottom: 1px #00587A solid;*/
+}

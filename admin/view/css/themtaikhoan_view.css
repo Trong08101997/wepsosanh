@@ -1,0 +1,78 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #E7E7DE;
+}
+
+.container01 #quanly {
+	text-align: left;	
+	font-size: 25px;
+	margin-bottom: 30px;
+	border-bottom: 2px #00587A solid;
+	width: 300px;
+	/*box-shadow:#000 0px 0px 4px 0px;*/
+}
+
+.container01 form input{
+	margin-bottom: 12px;
+	height: 28px;
+	width: 230px;
+	padding-left: 10px;
+	border: 0px;
+	box-shadow:#000 0px 0px 2px 0px;
+	border-radius: 2px;
+}
+
+.themtaikhoan_container{
+	background: white;
+	border: #0F3057 solid 1px;
+	width: 40%;
+	margin: 100px auto;
+	height: 300px;
+	padding: 70px 20px  0px 20px;
+	box-shadow:#000 0px 0px 4px 0px;
+	border-radius: 5px;
+	text-align: left;
+	color: #00587A;
+}
+
+.themtaikhoan_container span{
+	margin-left: 90px;
+	font-size: 35px;
+}
+
+.themtaikhoan_container form{
+	margin: 20px 0 0 90px;
+	text-align: left;
+	background: white;
+}
+
+.themtaikhoan_container form .input{
+	background: white;
+	margin-bottom: 20px;
+	border: 1px solid #0F3057;
+	padding-left: 10px;
+	height: 26px;
+	width: 200px;
+	border-radius: 2px;
+}
+
+.themtaikhoan_container form #them{
+	background: #0F3057;
+	margin-bottom: 20px;
+	border: 1px solid #0F3057;
+	height: 32px;
+	width: 100px;
+	border-radius: 2px;
+	color: white;
+	font-size: 16px;
+}
+
+.themtaikhoan_container form #them:hover{
+	background: #008891;
+	border: 0px;
+}
+
+
