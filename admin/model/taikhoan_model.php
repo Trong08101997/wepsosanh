@@ -1,11 +1,6 @@
 <?php 
 	class taikhoan_model {
-		/**
-	 	 * 
-	 	 */
-
 		//kêt nối DB
-
 		function themtaikhoan_model_function($username, $password) {
 			$password = md5($password);
 			mysqli_query($connect, "INSERT INTO users (username_users, password_users) 
