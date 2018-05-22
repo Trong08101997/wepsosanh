@@ -12,5 +12,10 @@
 			
 			return $result;
 		}
+
+		function xoataikhoan_model_function($id) {
+			require_once "connect_db.php";
+			$result = mysql_query($connect, "DELETE FROM products WHERE id = '$id'")
+		}
 	}
  ?>
