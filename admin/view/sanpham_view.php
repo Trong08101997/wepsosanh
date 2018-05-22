@@ -3,6 +3,8 @@
 <head>
 	<title>Quản lý sản phẩm</title>
     <link rel="stylesheet" type="text/css" href="view/css/sanpham_view.css">
+    <script src="view/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="view/js/script.js"></script>
 </head>
 <body>
 	<?= require_once "header_view.php" ?>
@@ -11,6 +13,10 @@
 			<div id="quanly">
 				Quản Lý Sản Phẩm
 			</div>
+
+            <div id="add_product">
+                Thêm Sản Phẩm
+            </div>
 
             <?php
                 require_once "controller/sanpham_controller.php";

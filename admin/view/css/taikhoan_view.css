@@ -8,7 +8,7 @@
 	margin-bottom: 30px;
 	margin-left: 23.5px;
 	border-bottom: 2px #00587A solid;
-	width: 280px;
+	width: 600px;
 	/*box-shadow:#000 0px 0px 4px 0px;*/
 }
 
@@ -37,6 +37,7 @@
 	/*margin-top: 30px;*/
 	font-size: 17px;
 	margin: 60px auto;
+	width: 85%
 	/*border: 1px red solid;	*/
 }
 
@@ -50,7 +51,11 @@
 	text-align: center;
 }
 
-.container01 .show_users_table .stt{
+.container01 .show_users_table a {
+	text-decoration: none;
+}
+
+.container01 .show_users_table .stt {
 	width: 50px;
 	border-right: 1px #00587A solid;
 }

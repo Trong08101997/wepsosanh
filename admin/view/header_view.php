@@ -15,7 +15,6 @@
 	<div class="menu_header">
 		<ul>
             <li><a id="categorys" href="?action=sanpham_view">Sản Phẩm</a></li>
-            <li><a id="categorys" href="#news">Thêm Sản Phẩm</a></li>
             <li id="logout_near"><a id="categorys" href="?action=taikhoan_view">Tài Khoản</a></li>
             <li id="logout">
                 <span>

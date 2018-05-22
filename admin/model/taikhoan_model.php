@@ -13,5 +13,10 @@
 
 			return $result;
 		}
+
+		function xoataikhoan_model_function($id) {
+			require_once "connect_db.php";
+			mysqli_query($connect, "DELETE FROM users WHERE id_users = '$id'");
+		}
 	}
  ?>
