@@ -37,7 +37,7 @@ body {
 	padding-top: 41px;
 	width: 70%;
 	background: white;
-	height: 700px;
+	min-height: 700px;
 }
 .menu_header ul {
 	width: 60%;

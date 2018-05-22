@@ -1,4 +1,7 @@
 <?php
+    require_once 'controller/taikhoan_controller.php';
+    $taikhoan = new taikhoan_controller;
+
     if (isset($_GET['action'])){
         $action = $_GET['action'];
 
@@ -12,9 +15,6 @@
             require_once 'controller/dangxuat_controller.php';
 
         } elseif ($action == 'taikhoan_controller') {
-            require_once 'controller/taikhoan_controller.php';
-
-            $taikhoan = new taikhoan_controller;
             $taikhoan->themtaikhoan_controller_function();
 
         } elseif ($action == 'taikhoan_view'){
@@ -22,6 +22,11 @@
 
         } elseif ($action = 'themtaikhoan_view') {
             require_once 'view/themtaikhoan_view.php';
+        
+        } elseif ($action = 'delete_user') {
+            $id = $_GET['id'];
+            $taikhoan->xoataikhoan_controller_function($id);
+
         }
 
     } else {

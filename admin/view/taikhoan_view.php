@@ -40,7 +40,7 @@
                             echo '<td class="stt">' . $d . '</td>';
                             echo '<td>' . $row['username_users'] . '</td>';
                             echo '<td>' . $row['password_users'] . '</td>';
-                            echo '<td class="thaotac">xoa</td>';
+                            echo '<td class="thaotac"><a href="index.php?action=delete_user?id=' . $row['id_users'] . '">xoa</a></td>';
                         echo '</tr>';
                         $d++;
                     }
