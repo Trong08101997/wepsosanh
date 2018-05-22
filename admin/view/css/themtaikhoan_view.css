@@ -6,6 +6,10 @@ body{
 	background: #E7E7DE;
 }
 
+.container01 {
+	margin-left: 23.5px;
+}
+
 .container01 #quanly {
 	text-align: left;	
 	font-size: 25px;
@@ -15,85 +19,23 @@ body{
 	/*box-shadow:#000 0px 0px 4px 0px;*/
 }
 
-.container01 form input{
-	margin-bottom: 12px;
+.container01 form input {
 	height: 28px;
-	width: 230px;
+	width: 250px;
 	padding-left: 10px;
 	border: 0px;
-	box-shadow:#000 0px 0px 2px 0px;
 	border-radius: 2px;
-}
-
-/*
-.themtaikhoan_container{
-	background: white;
-	border: #0F3057 solid 1px;
-	width: 40%;
-	margin: 100px auto;
-	height: 300px;
-	padding: 70px 20px  0px 20px;
-	box-shadow:#000 0px 0px 4px 0px;
-	border-radius: 5px;
-	text-align: left;
-	color: #00587A;
-}
-
-.themtaikhoan_container span{
-	margin-left: 90px;
-	font-size: 35px;
-}
-
-.themtaikhoan_container form{
-	margin: 20px 0 0 90px;
-	text-align: left;
-	background: white;
-}
-
-.themtaikhoan_container form .input{
-	background: white;
-	margin-bottom: 20px;
-	border: 1px solid #0F3057;
-	padding-left: 10px;
-	height: 26px;
-	width: 200px;
-	border-radius: 10px;
-}
-*/
-
-/*.themtaikhoan_container form #them{
-	background: #0F3057;
-	margin-bottom: 20px;
-	border: 1px solid #0F3057;
-	height: 40px;
-	width: 200px;
-	border-radius: 2px;
-	color: white;
-	font-size: 20px;
-}
-*/
-.container{
-	background: white;
-	border: #0F3057 solid 1px;
-	width: 40%;
-	margin: 100px auto;
-	height: 300px;
-	padding: 70px 20px  0px 20px;
-	box-shadow:#000 0px 0px 4px 0px;
-	border-radius: 2px;
-	text-align: left;
-	color: #00587A;
 }
 
 .container01 form {
-	margin: 20px 0 0 90px;
+	margin: 0px 0 0 20px;
 	text-align: left;
 	background: white;
 }
 
-.container01 form .input{
+.container01 form .input {
 	background: white;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	border: 1px solid #0F3057;
 	padding-left: 10px;
 	height: 26px;
@@ -104,14 +46,19 @@ body{
 #them:hover{
 	background: #008891;
 	border: 0px;
+	border: 1px solid #0F3057;
 }
 
 #them{
 	background: #0F3057;
 	border: 1px solid #0F3057;
-	border-radius: 2px;
 	color: white;
-	font-size: 20px;
-	height: 40px;
+	font-size: 16px;
+	height: 35px;
 	padding: 0px;
+	width: 100px;
+}
+
+#them:disabled{
+	background: gray;
 }

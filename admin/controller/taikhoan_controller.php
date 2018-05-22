@@ -8,7 +8,8 @@
 			require_once "model/taikhoan_model.php";
 			$user_ctl = new taikhoan_model;
 			$user_ctl->themtaikhoan_model_function($username, $password);
-			header("Location: view/themtaikhoan_view.php");
+
+			header("Location: index.php?action=taikhoan_view");
 		}
 
 		function laytaikhoan_controller_function() {
