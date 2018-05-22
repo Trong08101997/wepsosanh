@@ -33,13 +33,16 @@
                     $d = 1;
                     while ($row = mysqli_fetch_array($result)) {
                         echo '<tr>';
+                            $linkanh = $row['sp_anh_dai_dien'];
+                            $tien = number_format($row['sp_gia'],0,'.',' ') . " VNĐ";
                             echo '<td class="stt">' . $d . '</td>';
                             echo '<td>' . $row['sp_ten'] . '</td>';
-                            echo '<td>' . $row['sp_anh_dai_dien'] . '</td>';
+                            echo '<td class="img">' . '<img ' . 'src="' . "../images/" . $linkanh . '" /></td>';
                             echo '<td>' . $row['sp_loai_san_pham'] . '</td>';
-                            echo '<td>' . $row['sp_gia'] . '</td>';
+                            echo '<td>' . $tien . '</td>';
                             echo '<td class="cauhinh">' . $row['sp_cau_hinh'] . '</td>';
-                            echo '<td class="thaotac">xoa</td>';
+                            echo '<td class="thaotac"><input id="sua" type="button" name="sua" value="Sửa" />
+                            <input id="xoa" type="button" name="xoa" value="Xóa" /></td>';
                         echo '</tr>';
                         $d++;
                     }

@@ -53,3 +53,8 @@
 	text-align: left;
 	padding: 10px 0px 10px 20px;
 }
+
+.container01 .show_products_table .img img{
+	width: 100px;
+	height: 100px;
+}
