@@ -72,3 +72,11 @@
   display: block;
 }
 
+
+/*footer*/
+
+.footer p{
+  text-align: center;
+  color: #0F3057;
+  padding-top: 100px;
+}
