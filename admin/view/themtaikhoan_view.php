@@ -13,7 +13,7 @@
             <div id="quanly">
                 Thêm một tài khoản mới
             </div>
-            <form action="?action=taikhoan_controller" method="post">
+            <form action="?action=themsanpham_controller" method="post">
                 <b>Tên tài khoản</b><br/>
                 <input class="input" type="text" required="required" name="username"><br>
                 <b>Mật khẩu</b><br/>

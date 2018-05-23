@@ -13,6 +13,9 @@
 			return $result;
 		}
 
-		
+		function xoasanpham_model_function($id) {
+			require_once "connect_db.php";
+			mysqli_query($connect, "DELETE FROM products WHERE sp_id = '$id'");
+		}
 	}
  ?>

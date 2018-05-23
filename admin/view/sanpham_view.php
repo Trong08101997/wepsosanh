@@ -47,8 +47,10 @@
                             echo '<td>' . $row['sp_loai_san_pham'] . '</td>';
                             echo '<td>' . $tien . '</td>';
                             echo '<td class="cauhinh">' . $row['sp_cau_hinh'] . '</td>';
-                            echo '<td class="thaotac"><input id="sua" type="button" name="sua" value="Sửa" />
-                            <input id="xoa" type="button" name="xoa" value="Xóa" /></td>';
+                            echo '<td class="thaotac">
+                                    <a href="?action=xoa_product&id=' . $row['sp_id'] . '">xóa</a><br><br>
+                                    <a href="?action=sua_product&id=' . $row['sp_id'] . '">sửa</a>
+                                </td>';
                         echo '</tr>';
                         $d++;
                     }
