@@ -1,5 +1,4 @@
 <?php
-	
 	class taikhoan_controller {
  
 		function themtaikhoan_controller_function() {

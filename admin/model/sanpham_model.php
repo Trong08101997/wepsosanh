@@ -1,9 +1,33 @@
 <?php 
 	class sanpham_model {
-		function themsanpham_model_function($username, $password) {
-			$password = md5($password);
-			mysqli_query($connect, "INSERT INTO users (username_users, password_users) 
-									VALUES ('$username', '$password')");
+
+		function themsanpham_model_function($arr) {
+			$ten = $arr['ten'];
+			$anh_dai_dien = $arr[0];
+			$anh_san_pham = $arr[1];
+			$loai_san_pham = $arr['loai_san_pham'];
+			$cau_hinh = $arr['cau_hinh'];
+			$cau_hinh_chi_tiet = $arr['cau_hinh_chi_tiet'];
+			$gia = $arr['gia'];
+
+			mysqli_query($connect, "INSERT INTO products(
+														sp_ten,
+														sp_anh_dai_dien,
+														sp_anh_san_pham,
+														sp_loai_san_pham,
+														sp_cau_hinh,
+														sp_cau_hinh_chi_tiet,
+														sp_gia
+									) VALUES (
+														'$ten',
+														'$anh_dai_dien',
+														'$anh_san_pham',
+														'$loai_san_pham',
+														'$cau_hinh',
+														'$cau_hinh_chi_tiet',
+														'$gia'
+													     )"
+													 );
 		}
 
 		function laysanpham_model_function() {

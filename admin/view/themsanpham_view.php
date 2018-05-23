@@ -13,7 +13,7 @@
             <div id="quanly">
                 Thêm sản phẩm
             </div>
-            <form action="?action=taikhoan_controller" method="post" enctype="multipart/form-data">
+            <form action="?action=themsanpham_controller" method="post" enctype="multipart/form-data">
 				<input type="text" name="sp_ten" placeholder="Tên sản phẩm"><br>
 
 				<h3>Ảnh đại diện sản phẩm: </h3>

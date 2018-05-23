@@ -20,30 +20,28 @@
         } elseif($action == 'themsanpham_controller') {
             $sanpham->themsanpham_controller_function();
 
-        } elseif ($action == 'xoa_product') { 
+        } elseif($action == 'xoa_product') { 
             $id = $_GET['id'];
             $sanpham->xoasanpham_controller_function($id);
 
-        } elseif ($action == 'dangxuat'){
+        } elseif($action == 'dangxuat'){
             require_once 'controller/dangxuat_controller.php';
 
-        } elseif ($action == 'taikhoan_controller') {
+        } elseif($action == 'themtaikhoan_controller') {
             $taikhoan->themtaikhoan_controller_function();
 
-        } elseif ($action == 'taikhoan_view') {
+        } elseif($action == 'taikhoan_view') {
             require_once 'view/taikhoan_view.php';
 
-        } elseif ($action == 'themtaikhoan_view') {
+        } elseif($action == 'themtaikhoan_view') {
             require_once 'view/themtaikhoan_view.php';
         
-        } elseif ($action == 'xoa_user') {
+        } elseif($action == 'xoa_user') {
             $id = $_GET['id'];
             $taikhoan->xoataikhoan_controller_function($id);
 
         }
-
     } else {
         require_once "view/dangnhap_view.php";
-        // require_once "view/themtaikhoan_view.php";
     }
 ?>
