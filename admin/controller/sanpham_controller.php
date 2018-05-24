@@ -72,9 +72,9 @@
 				$arr = array_merge($arr, $arr1);
 			}
 
-			echo "<pre>";
-			print_r($arr);
-			echo "</pre>";
+			// echo "<pre>";
+			// print_r($arr);
+			// echo "</pre>";
 			require_once "model/sanpham_model.php";
 			$get = new sanpham_model;
 			$get->themsanpham_model_function($arr);

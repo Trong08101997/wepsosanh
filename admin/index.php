@@ -20,6 +20,10 @@
         } elseif($action == 'themsanpham_controller') {
             $sanpham->themsanpham_controller_function();
 
+        } elseif($action == 'sua_product') {
+            $id = $_GET['id'];
+            require_once 'view/suasanpham_view.php';
+
         } elseif($action == 'xoa_product') { 
             $id = $_GET['id'];
             $sanpham->xoasanpham_controller_function($id);

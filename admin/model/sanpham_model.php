@@ -2,6 +2,10 @@
 	class sanpham_model {
 
 		function themsanpham_model_function($arr) {
+			// echo "<pre>";/
+			// print_r($arr);
+			// echo "</pre>";
+			require_once "connect_db.php";
 			$ten = $arr['ten'];
 			$anh_dai_dien = $arr[0];
 			$anh_san_pham = $arr[1];
