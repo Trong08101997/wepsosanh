@@ -6,54 +6,52 @@
 .container {
 }
 
-.container form {
-	height: 400px;
-	width: 700px;
-	margin: 100px auto;
+.container .search form {
+	width: 60%;
+	margin: 260px auto;
 }
 
-.container form .search_box01 {
-	/*margin: 100px auto;*/
-	width: 100%;
+.container .search form #search_box_input01 {
+	width: 70%;
 	border: 1px black solid;
 	height: 43px;
 	border-radius: 50px;
-	padding-left: 5px;
-}
-
-.container form .search_box01 input{
-	/*margin: 100px auto;*/
-	width: 90%;
-	border: 0px red solid;
-	/*border: none;*/
-	height: 38px;
-	font-size: 18px;
-	padding-left: 10px;
-	border-radius: 50px;
+	padding-left: 17px;
+	font-size: 20px;
 	float: left;
-	margin-right: 15px;
 }
 
-.container form .search_box01 .img {
-	margin: 5px 0 0 10px;	
-}
-
-.container .add_search_box {
-	height: 80px;
-	width: 80px;
-	background: #dedede;
-	margin-top: 20px;	
-	box-shadow: #a1a1a1 0px 0px 4px 0px;
-
-}
-
-.container form input[type="submit"] {
-	height: 35px;
-	width: 180px;
+.container .search form input[type="submit"] {
+	height: 45px;
+	width: 20%;
+	margin-left: 40px;
 	background: #00587A;
 	border-radius: 2px;
 	border: none;
 	color: white;
-	font-size: 17px;
-	margin: 40px auto;
+	font-size: 18px;
+	border-radius: 50px;
+}
+
+.container .search form input[type="submit"]:hover {
+	background: white;
+	border: 1px solid #00587A;
+	color: #00587A;
+}
+
+.container .search .result_search {
+	/*border-top: 5px solid blue;*/
+	border-right: 1px solid #00587A;
+	border-left: 1px solid #00587A;
+	border-bottom: 1px solid #00587A;
+	/*border: 1px solid red;*/
+	margin-left: 20px;
+	width: 67%;
+}
+
+.container .search .result_search div {
+	margin: 10px 0 10px 10px;
+}
+
+.container .search #test div{
 }
