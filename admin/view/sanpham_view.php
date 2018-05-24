@@ -49,7 +49,7 @@
                             echo '<td class="cauhinh">' . $row['sp_cau_hinh'] . '</td>';
                             echo '<td class="thaotac">
                                     <a href="?action=xoa_product&id=' . $row['sp_id'] . '">xóa</a><br><br>
-                                    <a href="?action=sua_product&id=' . $row['sp_id'] . '">sửa</a>
+                                    <a href="?action=sua_product&id=' . $row['sp_id'] . '&ten='. $row['sp_ten'] . '">sửa</a>
                                 </td>';
                         echo '</tr>';
                         $d++;

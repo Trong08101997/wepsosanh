@@ -22,7 +22,12 @@
 
         } elseif($action == 'sua_product') {
             $id = $_GET['id'];
+            $ten = $_GET['ten'];
             require_once 'view/suasanpham_view.php';
+
+        }elseif ($action == 'sua_product_controller') {
+            $id = $_POST['id'];
+            $sanpham->capnhatsanpham_controller_function($id);
 
         } elseif($action == 'xoa_product') { 
             $id = $_GET['id'];

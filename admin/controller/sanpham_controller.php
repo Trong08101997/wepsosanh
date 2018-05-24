@@ -97,4 +97,14 @@
 
 			header("Location: index.php?action=sanpham_view");
 		}
+
+		function capnhatsanpham_controller_function($id){
+			
+			$gia = $_POST['sp_gia'];
+
+			require_once "model/sanpham_model.php";
+			$get = new sanpham_model;
+			$get->suasanpham_model_function($id, $gia);
+			header("Location: index.php?action=sanpham_view");
+		}
 	}

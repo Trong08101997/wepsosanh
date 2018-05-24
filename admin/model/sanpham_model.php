@@ -45,5 +45,10 @@
 			require_once "connect_db.php";
 			mysqli_query($connect, "DELETE FROM products WHERE sp_id = '$id'");
 		}
+
+		function suasanpham_model_function($id , $sp_gia){
+			require_once "connect_db.php";
+			mysqli_query($connect, "UPDATE products SET sp_gia = '$sp_gia' WHERE sp_id = '$id'");
+		}
 	}
  ?>

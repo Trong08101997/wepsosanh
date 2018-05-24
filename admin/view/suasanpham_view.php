@@ -13,14 +13,13 @@
             <div id="quanly">
                 Sửa sản phẩm
             </div>
-            <form action="?action=themsanpham_controller" method="post" enctype="multipart/form-data">
-				<input type="text" name="sp_ten" placeholder="Tên sản phẩm"><br>
-
-				<input type="text" name="sp_loai_san_pham" placeholder="Loại sản phẩm"><br>
-				<h3>Cấu hình:</h3><input type="text" name="sp_cau_hinh" placeholder="Nhập link sản phẩm (fptshop.com.vn)"><br>
-				<h3>Cấu hình chi tiết:</h3><input type="text" name="sp_cau_hinh_chi_tiet" placeholder="Nhập link sản phẩm (cellphones.com.vn)"><br>
+            <form action="?action=sua_product_controller" method="post" enctype="multipart/form-data">
+				
+				<input type="hidden" name="id" value="<?= $id ?>">
+				<b>Tên sản phẩm:</b><?php echo $ten; ?><br/>
 				<input type="text" name="sp_gia" placeholder="Giá sản phẩm"><br>
 				<input type="submit" value="Sửa">
+
             </form>
         </div>
 	</div>
