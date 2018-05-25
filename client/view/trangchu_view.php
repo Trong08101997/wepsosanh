@@ -8,18 +8,19 @@
 </head>
 <body>
 	<div class="container">
+        <div class="tags">
+            <div id="tag3" class="tg"></div>
+            <div id="tag2" class="tg"></div>
+            <div id="tag1" class="tg"></div>
+        </div>
+
         <div class="search">
             <form action="" method="post">
-                <input type="text" id="search_box_input01" placeholder="Nhập tên sản phẩm" name="submit">
+                <input type="text" id="search_box_input01" placeholder="Nhập tên sản phẩm" autocomplete="off" name="submit">
                 
-                <input type="submit" name="submit" value="So Sánh">
-                <div class="result_search">
-
-                </div>
-                <div id="test">
-                    
-                </div>
-        </form>    
+                <input type="button" id="done" name="submit" value="So Sánh">
+                <div class="result_search"></div>
+            </form>    
         </div>
     </div>
 </body>
