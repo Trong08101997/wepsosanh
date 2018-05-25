@@ -18,6 +18,10 @@
                 Thêm Sản Phẩm
             </div>
 
+            <div id="update_price_product">
+                Cập nhật giá nhiều sp
+            </div>
+
             <?php
                 require_once "controller/sanpham_controller.php";
                 $sanphamController = new sanpham_controller;

@@ -107,4 +107,13 @@
 			$get->suasanpham_model_function($id, $gia);
 			header("Location: index.php?action=sanpham_view");
 		}
+
+		function suagia_nhieu_sanpham_controller_function($ten_hang, $phan_tram){
+
+			require_once "model/sanpham_model.php";
+			$get = new sanpham_model;
+			$get->suagia_nhieu_sanpham_model_function($ten_hang, $phan_tram);
+			header("Location: index.php?action=sanpham_view");
+			
+		}
 	}
