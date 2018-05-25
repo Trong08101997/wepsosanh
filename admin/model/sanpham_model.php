@@ -45,5 +45,19 @@
 			require_once "connect_db.php";
 			mysqli_query($connect, "DELETE FROM products WHERE sp_id = '$id'");
 		}
+
+		function suasanpham_model_function($id , $sp_gia){
+			require_once "connect_db.php";
+			mysqli_query($connect, "UPDATE products SET sp_gia = '$sp_gia' WHERE sp_id = '$id'");
+		}
+
+		function suagia_nhieu_sanpham_model_function($ten_hang, $phan_tram){
+			require_once "connect_db.php";
+			if($ten_hang == "tất cả"){
+				mysqli_query($connect, "UPDATE products SET sp_gia = sp_gia+(sp_gia*'$phan_tram'/100) ");
+			}else{
+				mysqli_query($connect, "UPDATE products SET sp_gia = sp_gia+(sp_gia*'$phan_tram'/100) WHERE sp_loai_san_pham = '$ten_hang'");
+			}
+		}
 	}
  ?>

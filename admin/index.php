@@ -22,7 +22,20 @@
 
         } elseif($action == 'sua_product') {
             $id = $_GET['id'];
+            $ten = $_GET['ten'];
             require_once 'view/suasanpham_view.php';
+
+        }elseif ($action == 'sua_product_controller') {
+            $id = $_POST['id'];
+            $sanpham->capnhatsanpham_controller_function($id);
+
+        }elseif ($action == 'suagia_nhieu_sanpham_view') {
+            require_once 'view/suagia_nhieu_sanpham_view.php';
+
+        }elseif ($action == 'suagia_nhieu_sanpham_controller_function') {
+            $ten_hang = $_POST['hang'];
+            $phan_tram = $_POST['phan_tram'];
+            $sanpham->suagia_nhieu_sanpham_controller_function($ten_hang, $phan_tram);
 
         } elseif($action == 'xoa_product') { 
             $id = $_GET['id'];

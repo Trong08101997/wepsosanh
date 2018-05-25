@@ -28,6 +28,27 @@
 	color: black;
 }
 
+.container01 #update_price_product {
+	border: 1px #00587A solid;
+	width: 200px;
+	height: 35px;
+	font-size: 17px;
+	right: 20px;
+	line-height: 35px;
+	margin: 20px 0 50px 23.5px;
+	border-radius: 3px;
+	background: #00587A;	
+	color: white;
+	/*padding-left: 40px;*/
+	text-align: center;
+}
+
+.container01 #update_price_product:hover{
+	background: white;
+	border: 1px #00587A solid;
+	color: black;
+}
+
 .container01 .show_products_table {
 	width: 100%;
 	font-size: 17px;
