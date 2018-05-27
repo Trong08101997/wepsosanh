@@ -42,12 +42,16 @@
 .container01 .header .search_box {
   margin-top: 4px;
   float: right;
+  /*position: fixed;*/
+  width: 35%;
+  margin-right: 0px;
 }
 
 .container01 .header .search_box input {
   margin-top: 6px;
   height: 30px;
-  width: 300px;
+  /*width: 300px;*/
+  width: 100%;
   border-radius: 3px;
   border: 0px solid green;
   padding-left: 10px;
@@ -57,6 +61,35 @@
   box-shadow: #bababa 0px 0px 5px 0px;
 }
 
+.container01 .header .search_box .result {
+  border-right: 1px solid #b2b2b2;
+  border-left: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  margin-top: 5px;
+  /*background: #e9e9e9;*/
+  opacity: 0.6;
+  /*background: #d5d5d5;*/
+  background: white;
+  width: 102%;
+  color: black;
+  box-shadow: #9e9e9e 0px 1px 4px 0px;
+  /*height: 300px;*/
+  /*display: ta;*/
+}
+
+.container01 .header .search_box .result div {
+  color: black;
+  float: none;
+  line-height: 35px;
+  height: 33px;
+  display: block;
+  padding-left: 3px;
+}
+
+.container01 .header .search_box .result div:hover {
+  background: #d5d5d5;
+  cursor: pointer;
+}
 /*container css*/
 
 .container {
@@ -175,4 +208,26 @@ tr:nth-child(even) {
   width: 33%;
   /*border-left: 1px solid #d1d1d1;*/
   border-right: 0px;
+}
+
+
+/*CSS thêm*/
+
+.add {
+  border: 1px #c6c6c6 solid;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center; 
+  line-height: 90px;
+  font-size: 20px;
+  color: gray;
+  border-radius: 10%;
+  /*background: #e0e0e0;*/
+  /*box-shadow: #999999 0px 0px 5px 0px;*/
+
+}
+
+.add:hover {
+  background: #e9e9e9;
 }

@@ -4,6 +4,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>So Sánh</title>
   <link href="view/css/sosanh_view.css" type="text/css" rel="stylesheet"/>
+  <script type="text/javascript" src="view/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="view/js/sosanh_view.js"></script>
 </head>
 
 <body>
@@ -15,6 +17,10 @@
 
       <div class="search_box">
         <input type="text" id="timkiem" placeholder="Tìm kiếm sản phẩm so sánh" />
+
+        <div class="result">
+          
+        </div>
       </div>      
     </div>
   </div>
