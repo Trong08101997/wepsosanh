@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{	
+  margin:0px; 
+	padding:0px;
+}
+
+.container01 {
+  width: 100%;
+  height: 50px;
+  background-color: #0F3057;
+  position: fixed;
+}
+
+.container01 .header {
+    width: 70%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.container01 .header div {
+  list-style:none ;
+  float: left;
+  color: #fff;
+}
+
+.container01 .header div a {
+  white-space: nowrap;
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+.container01 .header .home {
+    font-size: 30px;
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+.container01 .header .search_box {
+  margin-top: 4px;
+  float: right;
+}
+
+.container01 .header .search_box input {
+  margin-top: 6px;
+  height: 30px;
+  width: 300px;
+  border-radius: 3px;
+  border: 0px solid green;
+  padding-left: 10px;
+}
+
+.container01 .header .search_box input:focus {
+  box-shadow: #bababa 0px 0px 5px 0px;
+}
+
+/*container css*/
+
+.container {
+  font-family: inherit;
+  width: 90%;
+  height: 780px;
+  margin: 0px auto;
+  padding-top: 80px;
+}
+
+.container .title {
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.container .product1, .product2, .product3 {
+  min-height: 400px;
+  padding-top: 20px;
+  border-right: 1px solid #d1d1d1;
+}
+
+
+.container .product1 {
+  width: 33%;
+  /*border-right: 1px solid #d1d1d1;*/
+  float: left;
+}
+
+.container div div {
+  margin-bottom: 20px;
+}
+
+.container div .sp_cauhinh table {
+  border-spacing: 00px 15px;
+}
+
+.container div div table tr {
+  height: 25px;
+}
+
+tr:nth-child(even) {
+  background-color: #d8d8d8;
+}
+
+.container div div table tr td {
+  top: 0px;
+  vertical-align: top;
+  font-style: italic;
+}
+
+.container div div table tr td:first-child {
+  width: 150px;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.container div .close {
+  border: 1px solid #b7b7b7;
+  float: right;
+  margin-right: 20px;
+  width: 8%;
+  padding: 4px 0;
+  border-radius: 100%;
+  color: #b7b7b7;
+  text-align: center;
+  font-family: cursive;
+}
+
+.container div .close:hover {
+  background: #e0e0e0;
+  cursor: pointer;
+}
+
+.container div .img img {
+  background: green;
+  margin-left: 15%;
+  float: none;
+  margin-bottom: 30px;
+}
+
+.container div .sp_name {
+  font-family: monospace;
+  color: #0F3057;
+  margin-left: 5px;
+
+}
+
+.container div .sp_gia {
+  border-bottom: 1px #d1d1d1 solid;
+  height: 50px;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #0F3057;
+  margin-left: 5px;
+}
+
+.container div .sp_cauhinh {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.container .product1, .product2, .product3 .img {
+}
+
+.container .product2 {
+  width: 33%;
+  float: left;
+}
+
+.container .product3 {
+  float: left;
+  width: 33%;
+  /*border-left: 1px solid #d1d1d1;*/
+  border-right: 0px;
+}

@@ -71,8 +71,6 @@ $(document).ready(function() {
 		var tg1 = $("#tag1").text();
 		var tg2 = $("#tag2").text();
 		var tg3 = $("#tag3").text();
-
-		var tg = tg1 + "|" + tg2 + "|" + tg3;
-		location.assign("index.php?action=sosanh_view&arr="+tg);
+		location.assign("index.php?action=sosanh_view&tg1="+tg1+"&tg2="+tg2+"&tg3="+tg3);
 	});
 });

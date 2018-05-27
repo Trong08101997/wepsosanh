@@ -6,7 +6,7 @@
 			require_once "controller/sanpham_controller_like.php";
 		
 		} elseif($action == "sosanh_view") {
-			$list = $_GET['arr'];
+			
 			require_once "view/sosanh_view.php";
 
 
