@@ -45,7 +45,27 @@ $("#timkiem").keyup(function() {
     }).done(function(result) {
       $(".result").html(result);
 
-      $(".list_result").click(function() {}); 
+      $(".list_result").click(function() {
+        // $(".product2").text($(this).text());
+        // $(location)
+        var name1 = $("#1").text();
+        var name2 = $("#2").text();
+        var name3 = $("#3").text();
+        // alert(name1 + name2 + name3);
+        var name = $(this).text();
+        
+        if(name2 == "" & name3 == "") {
+          location.assign("index.php?action=sosanh_view&tg1="+name1+"&tg2="+name);
+
+        } else if(name2 == "") {
+          location.assign("index.php?action=sosanh_view&tg1="+name1+"&tg2="+name+"&tg3="+name3);
+        
+        } else if(name3 == "") {
+          location.assign("index.php?action=sosanh_view&tg1="+name1+"&tg2="+name2+"&tg3="+name);
+
+        }
+
+      }); 
     });
 });
 

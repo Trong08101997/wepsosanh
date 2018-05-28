@@ -11,7 +11,7 @@
 		      </div>   
 
 		      <div class="sp_name">
-		        <h1><b>' . $product['sp_ten'] . '</b></h1>
+		        <h1><b id="1">' . $product['sp_ten'] . '</b></h1>
 		      </div>   
 
 		      <div class="sp_gia">
@@ -37,7 +37,7 @@
 				      </div>   
 
 				      <div class="sp_name">
-				        <h1><b>' . $product['sp_ten'] . '</b></h1>
+				        <h1><b id="2">' . $product['sp_ten'] . '</b></h1>
 				      </div>   
 
 				      <div class="sp_gia">
@@ -54,6 +54,7 @@
 
 	    if($tg3 != "") {
 
+	    	$tg3 = trim($tg3);
     		$product = $get1->laysanpham_controller_function($tg3);
 	        $product = mysqli_fetch_array($product);
 
@@ -64,8 +65,8 @@
 				        <img width="70%" src="../images/' . $product['sp_anh_dai_dien'] . '"/>
 				      </div>   
 
-				      <div class="sp_name">
-				        <h1><b>' . $product['sp_ten'] . '</b></h1>
+				      <div id="3" class="sp_name">
+				        <h1><b id="3">' . $product['sp_ten'] . '</b></h1>
 				      </div>   
 
 				      <div class="sp_gia">
