@@ -6,9 +6,10 @@
 			require_once "controller/sanpham_controller_like.php";
 		
 		} elseif($action == "sosanh_view") {
-			
 			require_once "view/sosanh_view.php";
-
+		
+		} elseif($action == "sanpham_controller_suggest") {
+			require_once "view/sanpham_controller_suggest.php";
 
 		}
 

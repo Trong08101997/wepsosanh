@@ -1,16 +1,34 @@
 $(document).ready(function() {
 
 	$("#close2").click(function(){
-    $(".product2").html("<div class='add'>Thêm</div>");    
-	});
+    $(".product2").html("<div class='add'>Thêm</div><div class='suggest'>Hiện sản phẩm gợi ý</div>");    
+	
+  });
 
   $("#close3").click(function(){
-    $(".product3").text("");    
+    $(".product3").html("<div class='add'>Thêm</div><div class='suggest'>Hiện sản phẩm gợi ý</div>");    
+
+
+    $.ajax({
+      url : "?action=sanpham_controller_suggest",
+      type : "post",
+      datatype : "html",
+      data : {
+        str : $(this).val()
+      }
+    }).done(function(result) {
+      $(".result").html(result);
+      var name3 = $("#3").text();
+      var name3 = $("#3").text();
+      var name3 = $("#3").text();
+      
+      
+    });
   });
 
 
 
-  //event search
+  //event search  
   $("#timkiem").focusin(function() {
     $(".result").css("display", "block");
     // alert("trong");
