@@ -16,7 +16,7 @@
             <form action="?action=sua_product_controller" method="post" enctype="multipart/form-data">
 				
 				<input type="hidden" name="id" value="<?= $id ?>">
-				<b>Tên sản phẩm:</b><?php echo $ten; ?><br/>
+				<h2><b>Tên sản phẩm: </b><?php echo $ten; ?></h2><br/>
 				<input type="text" name="sp_gia" placeholder="Giá sản phẩm"><br>
 				<input type="submit" value="Sửa">
 
