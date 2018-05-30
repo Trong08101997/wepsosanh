@@ -276,4 +276,12 @@ h4 {
   /*vertical-align: super ;*/
   bottom: 0px;
 }
+/*footer*/
 
+.footter{
+  text-align: center;
+  color: #0F3057;
+  margin: auto;
+  padding: 20px;
+  float: bottom;
+}

@@ -23,5 +23,6 @@
             </form>    
         </div>
     </div>
+    <?php include_once 'footter.php'; ?>
 </body>
 </html>

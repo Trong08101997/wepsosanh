@@ -46,5 +46,13 @@ body{
 .login_container .form_login #dang_nhap:hover{
 	background: #008891;
 }
+/*footer*/
 
-
+.footter{
+	text-align: center;
+	color: #0F3057;
+	margin: auto;
+	padding: 20px;
+	padding-top: 300px;
+	float: bottom;
+}

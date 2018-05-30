@@ -71,4 +71,7 @@
 
 
 </body>
+<div>
+  <?php include_once 'footter.php'; ?>
+</div>
 </html>

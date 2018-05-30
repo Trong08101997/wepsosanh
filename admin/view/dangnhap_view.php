@@ -17,5 +17,6 @@
 
 		</div>
 	</div>
+	<?php include_once '../view/footter.php'; ?>
 </body>
 </html>

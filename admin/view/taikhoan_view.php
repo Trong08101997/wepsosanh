@@ -48,6 +48,7 @@
 
             </table>
         </div>
+        <?php include_once '../view/footter.php'; ?>
 	</div>
 </body>
 </html>

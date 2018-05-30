@@ -104,3 +104,14 @@
 	width: 100px;
 	height: 100px;
 }
+
+/*footer*/
+
+.footter{
+	text-align: center;
+	color: #0F3057;
+	margin: auto;
+	padding: 20px;
+	padding-top: 100px;
+	float: bottom;
+}

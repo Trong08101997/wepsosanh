@@ -73,3 +73,14 @@
 	border-left: 1px #00587A solid;
 	/*border-bottom: 1px #00587A solid;*/
 }
+
+/*footer*/
+
+.footter{
+	text-align: center;
+	color: #0F3057;
+	margin: auto;
+	padding: 20px;
+	padding-top: 200px;
+	float: bottom;
+}
