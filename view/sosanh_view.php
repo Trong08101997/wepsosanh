@@ -6,6 +6,13 @@
   <link href="view/css/sosanh_view.css" type="text/css" rel="stylesheet"/>
   <script type="text/javascript" src="view/js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="view/js/sosanh_view.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var h = $(".product1").height();
+      // alert(h);
+      $(".container").height(h+400);
+    });
+  </script>
 </head>
 
 <body>
@@ -66,12 +73,12 @@
     <?php  
       require_once "view/sanpham_show_view.php";
     ?>
+
   </div>
+    <?php include_once 'footter.php'; ?>
 
 
 
 </body>
-<div>
-  <?php include_once 'footter.php'; ?>
-</div>
+
 </html>

@@ -11,12 +11,20 @@
 		<div class="form_login">
 			<form action="?action=form_login" method="post">
 				<input type="text" name="username" placeholder="Tài Khoản"><br>
-				<input type="password" name="password" placeholder="Mật Khẩu"><br>
+				<input type="password" name="password" placeholder="Mật Khẩu">
+				<div class="check_login">
+		        <?php 
+		            session_start();
+		            if (isset($_SESSION['error'])) {
+		                echo "(*) " . $_SESSION['error'];
+		                session_destroy(); 
+		            }
+		         ?>    
+		        </div>
 				<input id="dang_nhap" type="submit" name="submit" value="Đăng Nhập">
 			</form>
 
 		</div>
 	</div>
-	<?php include_once '../view/footter.php'; ?>
 </body>
 </html>

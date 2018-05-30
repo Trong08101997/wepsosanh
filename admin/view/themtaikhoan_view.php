@@ -21,6 +21,14 @@
                 <b>Nhập lại mật khẩu</b><br/>
                 <input class="input" id="retype_password" type="password" required="required" name="retype_password"><br>
                 <br>
+                <div class="check_login">
+                <?php 
+                    if (isset($_SESSION['add_error'])) {
+                        echo "(*) " . $_SESSION['add_error'];
+                        unset($_SESSION['add_error']);
+                    }
+                 ?>    
+                </div>
                 <input disabled id="them" type="submit" name="submit" value="Thêm">
             </form>
         </div>

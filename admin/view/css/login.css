@@ -56,3 +56,9 @@ body{
 	padding-top: 300px;
 	float: bottom;
 }
+
+.check_login {
+	font-style: italic;
+	color: red;
+	margin-bottom: 10px;
+}

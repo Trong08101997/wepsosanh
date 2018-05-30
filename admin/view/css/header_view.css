@@ -12,6 +12,8 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
+	position: relative;
+
 	/*text-align: center;*/
 	/*overflow: hidden;*/
 
@@ -29,15 +31,16 @@ body {
 	left: 0;
 	width: 100%;
 	box-shadow:#000 0px 0px 4px 0px;
+
 }
 
 .container{
-	padding: 200px 20px 50px 20px;
+	padding: 200px 20px 70px 20px;
 	margin: 0px auto 0px;
 	padding-top: 41px;
 	width: 70%;
 	background: white;
-	min-height: 700px;
+	min-height: 630px;
 }
 .menu_header ul {
 	width: 60%;
@@ -69,7 +72,6 @@ body {
 .menu_header #logout a:hover{
 	color: #b8b8c1;
 }
-
 
 .menu_header li a {
     display: block;
