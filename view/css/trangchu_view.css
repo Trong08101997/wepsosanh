@@ -6,9 +6,14 @@
 .container {
 }
 
+.container .logo {
+	height: 25%;
+	width: 25%;
+	margin: 40px auto;
+}
+ 	
 .container .tags {
-	/*background: gray;*/
-	margin: 160px auto 0;
+	margin: 0px auto 0;
 	width: 55%;
 	height: 90px;
 }

@@ -28,6 +28,12 @@
 
 			return $result;
 		}		
+		function laysanpham_model_function_hang($str) {
+			require "model/connect_db.php";
+			$result = mysqli_query($connect, "SELECT * FROM products WHERE sp_loai_san_pham = '$str'");
+
+			return $result;
+		}
 
 		function __destruct() {}
 	}

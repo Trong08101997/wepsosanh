@@ -18,7 +18,7 @@
             <form action="" method="post">
                 <input type="text" id="search_box_input01" placeholder="Nhập tên sản phẩm" autocomplete="off" name="submit">
                 
-                <input type="button" id="done" name="submit" value="So Sánh">
+                <input type="button" id="done" disabled="disabled" name="submit" value="So Sánh">
                 <div class="result_search"></div>
             </form>    
         </div>

@@ -15,12 +15,13 @@ body {
   height: 50px;
   background-color: #0F3057;
   position: fixed;
+  box-shadow: black 0px 0px 5px 0px;
 }
 
 .container01 .header {
-    width: 70%;
-    margin: 0 auto;
-    height: 50px;
+  width: 70%;
+  margin: 0 auto;
+  height: 50px;
 }
 
 .container01 .header div {
@@ -35,26 +36,102 @@ body {
   color: #fff;
   display: block;
   text-decoration: none;
+  padding-right: 0px;
 }
 
 .container01 .header .home {
-    font-size: 30px;
-    margin-top: 10px;
-    font-family: monospace;
+  font-size: 30px;
+  margin-top: 10px;
+  font-family: monospace;
+}
+
+.container01 #ngan {
+  width: 1px;
+  height: 30px;
+  background: white;
+  margin: 10px 5px 0px 30px;
+}
+
+.container01 .danhmuc {
+  font-size: 22px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 0;
+}
+
+.container01 .danhmuc:hover {
+  background: #123f75;
+  cursor: pointer;
+}
+
+.catergorys {
+  width: 100%;
+  height: 260px;
+  /*background: #415f9d;*/
+  background: #e1e1e1;
+  position: absolute;
+  top: 51px;
+  display: none;
+  box-shadow: black 0px 0px 5px 0px;
+  width: 70%;
+  right: 15%;
+}
+
+.catergorys .catergorys_list {
+  border-right: 1px solid #0F3057;  
+  width: 15%;
+  float: left;
+}
+
+.catergorys .catergorys_list:hover {
+  cursor: pointer;
+}
+
+.catergorys .catergorys_list div {
+  margin: 15px 0px 0px 40px;
+  color: #0F3057;
+}
+
+.catergorys .catergorys_phone {
+  float: left;
+  width: 84%;
+}
+
+.catergorys .catergorys_phone div {
+  margin: 15px 0px 0px 30px;
+  /*width: 100%;*/
+  width: 28%;
+  float: left;
+  /*background: white;*/
+  color: #0F3057;
+  cursor: pointer;  
+}
+
+.catergorys .catergorys_phone .catergorys_list_phone1 {
+  float: unset;
+  margin: 15px 0px 0px 30px;
+}
+
+.catergorys .catergorys_phone div:hover {
+  color: red;
+}
+
+.container01 .danhmuc #danhmuc {
+  margin-left: 25px;
 }
 
 .container01 .header .search_box {
   margin-top: 4px;
   float: right;
-  /*position: fixed;*/
-  width: 35%;
+  width: 20%;
   margin-right: 0px;
+  transition: width 0.5s;
 }
 
 .container01 .header .search_box input {
   margin-top: 6px;
   height: 30px;
-  /*width: 300px;*/
   width: 100%;
   border-radius: 3px;
   border: 0px solid green;
@@ -65,20 +142,17 @@ body {
   box-shadow: #bababa 0px 0px 5px 0px;
 }
 
+
 .container01 .header .search_box .result {
   border-right: 1px solid #b2b2b2;
   border-left: 1px solid #b2b2b2;
   border-bottom: 1px solid #b2b2b2;
   margin-top: 5px;
-  /*background: #e9e9e9;*/
-  opacity: 0.6;
-  /*background: #d5d5d5;*/
+  opacity: 0.9;
   background: white;
   width: 102%;
   color: black;
   box-shadow: #9e9e9e 0px 1px 4px 0px;
-  /*height: 300px;*/
-  /*display: ta;*/
 }
 
 .container01 .header .search_box .result div {
@@ -94,8 +168,9 @@ body {
   background: #d5d5d5;
   cursor: pointer;
 }
-/*container css*/
 
+
+/*container css*/
 .container {
   font-family: inherit;
   width: 90%;
@@ -119,19 +194,17 @@ body {
   border-right: 1px solid #d1d1d1;
 }
 
-
 .container .product1 {
-  width: 33%;
-  /*border-right: 1px solid #d1d1d1;*/
-  float: left;
+  width: 27%;
+  float: right;
 }
 
 .container div div {
   margin-bottom: 20px;
 }
 
-.container div .sp_cauhinh table {
-  border-spacing: 00px 15px;
+.container div div table {
+  border-collapse: collapse;
 }
 
 .container div div table tr {
@@ -139,20 +212,70 @@ body {
 }
 
 tr:nth-child(even) {
-  background-color: #d8d8d8;
+  /*background-color: #e8e8e8;*/
+  /*margin-top: 50px;*/
 }
 
 .container div div table tr td {
-  top: 0px;
-  vertical-align: top;
+  vertical-align: middle;
   font-style: italic;
+  padding-left: 10px;
+}
+
+.container div div table tr:nth-child(17) {
+  height: 85px;
+}
+
+.container div div table tr:nth-child(26) {
+  height: 85px;
+}
+
+.container div div table tr {
+  height: 55px;
+  border-bottom: 1px solid #d0d0d0;
 }
 
 .container div div table tr td:first-child {
   width: 150px;
-  margin-top: 30px;
   font-style: normal;
+  display: none;
   font-weight: 600;
+}
+
+.container #product0 #base_img {
+  margin-bottom: 50px;
+}
+
+.container #product0 div table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.container #product0 div table tr td{
+  vertical-align: middle;
+  text-align: right;
+}
+
+.container #product0 div table tr td:first-child {
+  margin-top: 15px;
+  display: block;
+}
+
+.container #product0 div table tr {
+  background: #e9e9e9
+}
+
+.container #product0 div table tr td {
+  display: none;
+}
+
+.container .product0 div table tr {
+  background: white;
+}
+
+.container .product0 div table tr td {
+  display: none;
+  height: 55px;
 }
 
 .container div .close {
@@ -183,34 +306,56 @@ tr:nth-child(even) {
   font-family: monospace;
   color: #0F3057;
   margin-left: 5px;
+}
 
+.container div .sp_name h1 {
+  height: 80px;
 }
 
 .container div .sp_gia {
   border-bottom: 1px #d1d1d1 solid;
   height: 50px;
-  margin-right: 20px;
   font-size: 20px;
   color: #0F3057;
   margin-left: 5px;
+  margin-bottom: 0px;
 }
 
 .container div .sp_cauhinh {
-  margin-right: 20px;
+  margin-right: 0px;
   font-size: 14px;
 }
 
-.container .product1, .product2, .product3 .img {
+.container div .sp_cauhinh table {
+  /*border-collapse: collapse;*/
+}
+
+.container #product0 {
+  float: left;
+  width: 18%;
+  padding-top: 20px;
+}
+
+.container #product0 #base_img {
+  visibility: hidden;
+}
+
+.container #product0 #base_name {
+  visibility: hidden;
+}
+
+.container #product0 #base_gia {
+  visibility: hidden;
 }
 
 .container .product2 {
-  width: 33%;
-  float: left;
+  width: 27%;
+  float: right;
 }
 
 .container .product3 {
-  float: left;
-  width: 33%;
+  float: right;
+  width: 27%;
   /*border-left: 1px solid #d1d1d1;*/
   border-right: 0px;
 }
@@ -224,14 +369,20 @@ tr:nth-child(even) {
   width: 100px;
   margin: 0 auto;
   text-align: center; 
-  line-height: 90px;
+  line-height: 100px;
   font-size: 20px;
   color: gray;
   border-radius: 10%;
+  cursor: pointer;
+  transition: width 0.3s;
+  /*transition: height 0.3s;*/
 }
 
 .add:hover {
+  line-height: 100px;
   background: #e9e9e9;
+  height: 100px;
+  width: 150px;
 }
 
 h4 {
@@ -250,13 +401,15 @@ h4 {
 .suggest .product_suggest {
   float: left;
   height: 85%;
-  width: 30%;
+  width: 28%;
   margin: 20px 5px 0px 6px;
   text-align: center;
+  transition: width 0.2s;
 }
 
 .suggest .product_suggest:hover {
-  font-style: italic;
+  /*font-style: italic;*/
+  width: 32%;
   cursor: pointer;  
 }
 

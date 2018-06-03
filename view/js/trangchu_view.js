@@ -1,4 +1,4 @@
-function checkTag(){
+function checkTag() {
 	var t = 0;
 	for(var i = 1; i < 4; i++){
 		var cl = "#tag" + i;
@@ -21,6 +21,7 @@ $(document).ready(function() {
 		var val = $(this).val();
 		if(val == "") {
 			$(".result_search").css("display", "none");
+
 		} else {
 			$(".result_search").css("display", "block");
 		}
@@ -36,12 +37,7 @@ $(document).ready(function() {
 			$(".result_search").html(result);
 
 			$(".list_result").click(function() {
-				// alert($(this).text());
-				// $(".tag1").css("display", "table");
-				// $(".tag1").text($(this).text());
-
 				var check = checkTag();
-				// alert(check);
 				if(check == 0) {
 					alert("So sánh tối đa 3 sản phẩm");
 				
@@ -67,10 +63,15 @@ $(document).ready(function() {
 		$(this).css("display", "none");
 	});
 
-	$("#done").click (function () {
+	$("#done").click(function () {
 		var tg1 = $("#tag1").text();
 		var tg2 = $("#tag2").text();
 		var tg3 = $("#tag3").text();
-		location.assign("index.php?action=sosanh_view&tg1="+tg1+"&tg2="+tg2+"&tg3="+tg3);
+		if (tg1 == "" && tg2 == "" && tg3 == "") {
+			alert("Bạn chưa chọn sản phẩm.");
+		
+		} else {
+			location.assign("index.php?action=sosanh_view&tg1="+tg1+"&tg2="+tg2+"&tg3="+tg3);
+		}
 	});
 });

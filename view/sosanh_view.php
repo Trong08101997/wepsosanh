@@ -22,17 +22,36 @@
         <a href="index.php">SoSanhSanPham</a></li>
       </div>
 
+      <div id="ngan"></div>
+
+      <div class="danhmuc">
+        <div id="danhmuc">Danh Mục</div>
+      </div>
+
       <div class="search_box">
         <input type="text" id="timkiem" placeholder="Tìm kiếm sản phẩm so sánh" />
-
-        <div class="result">
-          
-        </div>
+        <div class="result"></div>
       </div>      
+
     </div>
+
+    <div class="catergorys">
+      <div class="catergorys_list">
+        <div class="hang">iPhone</div>
+        <div class="hang">Samsung</div>
+        <div class="hang">Sony</div>
+        <div class="hang">Oppo</div>
+        <div class="hang">Huawei</div>
+        <div class="hang">Vivo</div>
+        <div class="hang">HTC</div>
+      </div>
+      <div class="catergorys_phone"></div>
+    </div>
+    
   </div>
 
   <div class="container">
+      
     <?php 
       if(isset($_GET['tg1'])){
         $tg1 = $_GET['tg1'];
@@ -73,9 +92,9 @@
     <?php  
       require_once "view/sanpham_show_view.php";
     ?>
-
   </div>
-    <?php include_once 'footter.php'; ?>
+
+  <?php include_once 'footter.php'; ?>
 
 
 
